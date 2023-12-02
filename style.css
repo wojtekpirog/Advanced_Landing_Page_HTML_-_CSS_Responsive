@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  font-family: "Sen", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #212353;
+  background-color: #e5e5e5;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  flex-grow: 1;
+}
+
+.navbar-logo-component {
+  display: inline-block;
+  border-radius: 20px;
+  width: 20px;
+}
+
+.circular {
+  height: 20px;
+  background-color: #9c69e2;
+}
+
+.rectangular {
+  height: 35px;
+  background-color: #f063b8;
+}
+
+.navbar-links {
+  flex-grow: 3;
+}
+
+.navbar-links ul {
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  color: #4b5d68;
+}
+
+.navbar-links li a:hover {
+  color: #f063b8;
+  cursor: pointer;
+}
+
+.navbar-links ul li:first-child a {
+  font-weight: bold;
+  color: #212353;
+}
+.navbar-links ul li:first-child a:hover {
+  font-weight: bold;
+  color: #f063b8;
+  cursor: pointer;
+}
+
+.navbar-button {
+  flex-grow: 1;
+}
+
+.navbar-button button {
+  width: 210px;
+  height: 60px;
+  text-align: center;
+  line-height: 25.6px;
+  padding: 17.2px 0;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 5px #4b5d68;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.navbar-button button:hover {
+  transform: translateY(3px);
+  box-shadow: 0 2px 2px #4b5d68;
+  color: #f063b8;
+  cursor: pointer;
+}
+
+.fa-arrow-right {
+  margin-left: 20px;
+  color: #9c69e2;
+}
+
+.flex {
+  display: flex;
+}
+
+.section-content h1 {
+  font-family: Helvetica;
+  width: 645px;
+  height: 184px;
+  font-size: 80px;
+  line-height: 88px;
+  margin: 0;
+}
+
+.section-content p {
+  width: 380px;
+  font-size: 18px;
+  line-height: 28.8px;
+  margin: 66.4px 0;
+}
+
+.learn-more--button {
+  font-size: 18px;
+  line-height: 28.8px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 16px 37px;
+  outline: none;
+  border: none;
+  border-radius: 37px;
+  color: #e5e5e5;
+  background-color: #9c69e2;
+}
+
+.section-image {
+  position: relative;
+  top: 180px;
+  right: 266px;
+}
+
+.section-image img {
+  width: 680px;
+}
+
+.learn-more--button:hover {
+  cursor: pointer;
+}
+
+.rectangle {
+  height: 560px;
+  background-color: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+}
+
+.equal {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container--img img {
+  width: 477px;
+}
+
+.right-container--text_content {
+  flex-direction: column;
+  width: 475px;
+  padding: 33.2px;
+}
+
+.right-container--text_content h2 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.right-container--text_content p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28.8px;
+}
+
+.features--container h2 {
+  margin-top: 0;
+  font-size: 40px;
+  font-family: Helvetica;
+  line-height: 52px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.features--container p {
+  width: 100%;
+  margin: 66.4px 0;
+  text-align: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  column-gap: 76px;
+  row-gap: 50px;
+}
+
+.feature--background {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 442px;
+  height: 0;
+  border-bottom: 358px solid rgba(104, 201, 186, 0.1);
+  border-left: 50px solid transparent;
+  border-radius: 50px;
+}
+
+.feature--inner-text {
+  position: relative;
+  top: 170px;
+  left: -20px;
+}
+
+.feature--inner-text a {
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #212353;
+}
+
+p.feature-info {
+  text-align: left;
+}
+
+.feature-heading {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 31.2px;
+}
+
+.feature-info {
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+/* h2 {
+  font-size: 40px;
+  line-height: 52px;
+} */
+/* @media screen and (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    width: 100%;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  } 
+} */ ;
